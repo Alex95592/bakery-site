@@ -14,6 +14,7 @@
         <nav>
             <a href="#Menu">Menu</a>
             <a href="#Hours">Hours</a>
+            <a href="#order">Order</a>
         </nav>
     </header>
     <section id="Menu">
@@ -38,8 +39,26 @@
         <p>Email: info@mainstreetbakery.com</p>
         <p>Phone: (555) 123-4567</p>
     </section>
+    <section>
+        <h2>Order for Pickup</h2>
+        <form id="order-form">
+            <label>Name:<input type="text" id="name" required></label>
+            <label>Phone:<input type="tel" id="phone" required></label>
+            <label>Item
+                <select id="item">
+                    <option value="Sourdough Bread" data-price="8">Sourdough Bread ($8.00)</option>
+                    <option value="Croissant" data-price="4">Croissant ($4.00)</option>
+                    <option value="Muffin" data-price="3">Muffin ($3.00)</option>
+                </select>
+            </label>
+            <label>Quantity:<input type="number" id="quantity" min="1" value="1"></label>
+            <button type="submit">Place Order</button>
+        </form>
+        <p id="confirmation"> </p>
+    </section>
     <footer>
         <p>123 Main Street, Anytown, USA</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

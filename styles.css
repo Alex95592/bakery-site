@@ -45,3 +45,28 @@ footer{
         font-size: 1.6em;
     }
 }
+form label { 
+    display: block;
+     margin-bottom: 12px; 
+    }
+form input, form select { 
+    display: block; 
+    width: 100%; 
+    padding: 8px; 
+    margin-top: 4px; 
+    box-sizing: border-box; 
+}
+button { background: #8b5a2b; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 6px; 
+    cursor: pointer; 
+}
+button:hover { 
+    background: #6e4520; 
+}
+#confirmation { 
+    font-weight: bold; 
+    color: #2e7d32; 
+}
