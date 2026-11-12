@@ -44,24 +44,31 @@
         <form id="order-form">
             <label>Name:<input type="text" id="name" required></label>
             <label>Phone:<input type="tel" id="phone" required></label>
-            <label>Item
-                <select id="item1">
-                    <option value="Sourdough Bread" data-price="8">Sourdough Bread ($8.00)</option>
-                    <option value="Croissant" data-price="4">Croissant ($4.00)</option>
-                    <option value="Muffin" data-price="3">Muffin ($3.00)</option>
-                </select>
-            </label>
-            <label>Quantity:<input type="number" id="quantity1" min="1" value="1"></label>
-            <label>Item
-                <select id="item2">
-                    <option value="Sourdough Bread" data-price="8">Sourdough Bread ($8.00)</option>
-                    <option value="Croissant" data-price="4">Croissant ($4.00)</option>
-                    <option value="Muffin" data-price="3">Muffin ($3.00)</option>
-                </select>
-            </label>
-            <label>Quantity:<input type="number" id="quantity2" min="1" value="1"></label>
+            <div class="order-row">
+                <label>Item
+                    <select class="item">
+                        <option value="Select an item" data-price="0">Select an item</option>
+                        <option value="Sourdough Bread" data-price="8">Sourdough Bread ($8.00)</option>
+                        <option value="Croissant" data-price="4">Croissant ($4.00)</option>
+                        <option value="Muffin" data-price="3">Muffin ($3.00)</option>
+                    </select>
+                </label>
+                <label>Quantity:<input type="number" class="quantity" min="1" value="1"></label>
+            </div>
+            <div class="order-row">
+                <label>Item 
+                    <select class="item">
+                        <option value="Select an item" data-price="0">Select an item</option>
+                        <option value="Sourdough Bread" data-price="8">Sourdough Bread ($8.00)</option>
+                        <option value="Croissant" data-price="4">Croissant ($4.00)</option>
+                        <option value="Muffin" data-price="3">Muffin ($3.00)</option>
+                    </select>
+                </label>
+            <label>Quantity:<input type="number" class="quantity" min="1" value="1"></label>
+            </div>
             <button type="submit">Place Order</button>
         </form>
+        <p id="total-added"></p>
         <p id="confirmation"></p>
     </section>
     <footer>
